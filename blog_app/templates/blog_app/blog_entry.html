@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Blog Entries</h1>
+<h3>Enter your blog entry into the form below.This is a safe place no-one but the administration can see it.</h3>
+<form method="post">
+    <!--the as.p basically puts it in a p tag-->
+    {{blogentry.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="Post">
+</form>
+</body>
+</html>
